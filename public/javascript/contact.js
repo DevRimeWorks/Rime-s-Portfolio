@@ -27,7 +27,7 @@ contactForm.addEventListener("submit", (e) => {
     }
 
     let xhr = new XMLHttpRequest();
-    xhr.open('POST', '/');
+    xhr.open('POST', 'https://rime-s-portfolio-6t6g5wsm4-devrimeworks.vercel.app/api/server');
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onload = () => {
         if (xhr.responseText == 'success') {
