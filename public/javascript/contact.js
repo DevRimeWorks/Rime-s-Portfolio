@@ -11,6 +11,7 @@ contactForm.addEventListener("submit", (e) => {
 
     var contactButton = document.querySelector(".contact-form button");
     var Loading = document.querySelector(".loadAnim");
+    var thanksMessage = document.querySelector(".thanks");
 
     contactButton.disabled = true;
     name.readOnly = true;
@@ -29,14 +30,9 @@ contactForm.addEventListener("submit", (e) => {
     xhr.open('POST', '/');
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onload = () => {
-        console.log(xhr.responseText);
         if (xhr.responseText == 'success') {
-            contactButton.style.display = "block";
+            thanksMessage.innerHTML = "Thanks for reaching out " + name.value + ". I'll get back to you in an hour.";
             Loading.style.display = "none";
-
-            message.classList.add("green-placeholder");
-            message.placeholder = "Thanks for reaching out " + name.value + ". I'll get back to you in a couple hours";
-            changedPlaceholder = true;
 
             if (changedPlaceholder) {
                 setTimeout(() => {
@@ -60,6 +56,8 @@ contactForm.addEventListener("submit", (e) => {
 
         setTimeout(() => {
             contactButton.disabled = false;
+            thanksMessage.innerHTML = "";
+            contactButton.style.display = "block";
             name.readOnly = false;
             email.readOnly = false;
             message.readOnly = false;

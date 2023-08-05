@@ -767,7 +767,11 @@ nav {
   80%, 100% {
     transform: scale(0.3);
   }
- } 
+ }
+
+ .thanks {
+  color: green;
+ }
 
   /* BEFORE FOOTER */
 
