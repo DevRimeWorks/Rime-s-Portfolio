@@ -2,10 +2,10 @@
   "name": "portfolio---kopya",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "api/index.js",
   "scripts": {
-    "dev": "nodemon serve.js",
-    "start": "node serve.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -20,4 +20,5 @@
     "@vercel/node": "^2.15.8",
     "nodemon": "^3.0.1"
   }
+
 }
