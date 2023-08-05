@@ -31,16 +31,8 @@ contactForm.addEventListener("submit", (e) => {
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onload = () => {
         if (xhr.responseText == 'success') {
-            thanksMessage.innerHTML = "Thanks for reaching out " + name.value + ". I'll get back to you in an hour.";
             Loading.style.display = "none";
-
-            if (changedPlaceholder) {
-                setTimeout(() => {
-                    message.classList.remove("green-placeholder");
-                    message.placeholder = "Message";
-                    changedPlaceholder = false;
-                }, 5000);
-            }
+            thanksMessage.innerHTML = "Thanks for reaching out " + name.value + ". I'll get back to you in an hour.";
 
             name.value = "";
             email.value = "";
@@ -55,9 +47,9 @@ contactForm.addEventListener("submit", (e) => {
         }
 
         setTimeout(() => {
-            contactButton.disabled = false;
             thanksMessage.innerHTML = "";
             contactButton.style.display = "block";
+            contactButton.disabled = false;
             name.readOnly = false;
             email.readOnly = false;
             message.readOnly = false;
