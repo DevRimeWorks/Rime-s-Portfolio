@@ -27,7 +27,7 @@ contactForm.addEventListener("submit", (e) => {
     }
 
     let xhr = new XMLHttpRequest();
-    xhr.open('POST', '/');
+    xhr.open('POST', '/api');
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onload = () => {
         if (xhr.responseText == 'success') {

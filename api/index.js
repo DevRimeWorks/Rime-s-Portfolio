@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.static('public'));
 app.use(express.json());
 
-app.post("/", (req, res) => {
+app.post("/api", (req, res) => {
     console.log(req.body);
 
     const transporter = nodemailer.createTransport({
