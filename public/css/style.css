@@ -59,6 +59,8 @@ body::-webkit-scrollbar-thumb {
 
 .container {
   padding: 30px 40px;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
 .flexbox {
@@ -172,6 +174,7 @@ nav {
 .hero-container {
   margin-top: 60px;
   min-height: 60vh;
+  
 }
 
 .hero-text {
@@ -314,7 +317,7 @@ nav {
 
 /* PORTFOLIO */
 
-.portfolio-container {
+#portfolio {
   position: relative;
   background-color: #aa8f66;
   margin-top: 165px;
@@ -322,8 +325,8 @@ nav {
   padding-bottom: 120px;
 }
 
-.portfolio-container::before,
-.portfolio-container::after {
+#portfolio::before,
+#portfolio::after {
   content: "";
   position: absolute;
   left: 0;
@@ -332,19 +335,24 @@ nav {
   background-color: #d4bea0;
 }
 
-.portfolio-container::before {
+#portfolio::before {
   top: 0;
 }
 
-.portfolio-container::after {
+#portfolio::after {
   bottom: 0;
 }
 
-.portfolio-container h2 {
+#portfolio h2 {
   font-size: 36px;
   font-weight: 700;
   color: white;
   text-align: center;
+}
+
+.portfolio-container {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .portfolio-flexbox {
@@ -423,7 +431,8 @@ nav {
 /* PROCESS */
 
 .process-container {
-  margin: 120px 0;
+  max-width: 1600px;
+  margin: 120px auto;
 }
 
 .process-titles {
