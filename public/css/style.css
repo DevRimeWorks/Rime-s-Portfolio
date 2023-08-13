@@ -48,7 +48,7 @@ textarea:focus {
 }
 
 body {
-  background-color: #ffeedb;
+  background-color: #fff5ea;
   font-family: "Times New Roman kursiv", serif;
   scrollbar-width: thin;
 }
@@ -198,8 +198,16 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  color: #aa8f66;
+  background: rgb(170, 143, 102);
+  background: linear-gradient(
+    90deg,
+    rgba(170, 143, 102, 1) 50%,
+    rgba(68, 230, 178, 0.510329131652661) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-stroke: 0;
+  color: transparent;
   overflow: hidden;
   animation: text-animate 4s;
 }
@@ -224,8 +232,16 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  color: #aa8f66;
+  background: rgb(170, 143, 102);
+  background: linear-gradient(
+    90deg,
+    rgba(170, 143, 102, 1) 50%,
+    rgba(68, 230, 178, 0.510329131652661) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-stroke: 0;
+  color: transparent;
   overflow: hidden;
   animation: text-animate 5s;
 }
