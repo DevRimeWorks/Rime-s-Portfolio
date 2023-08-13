@@ -1321,6 +1321,10 @@ footer {
 
   /* portfolio */
 
+  #portfolio {
+    margin-top: 10vh;
+  }
+
   .portfolio-container {
     padding-right: 20px;
     margin-top: 120px;
@@ -1550,7 +1554,7 @@ footer {
   /* footer */
 
   .e {
-    margin-top: -125px;
+    margin-top: -100px;
   }
 
   .sm-icons {
