@@ -172,9 +172,8 @@ nav {
 
 /* hero */
 .hero-container {
-  margin-top: 60px;
-  min-height: 60vh;
-  
+  min-height: 100vh;
+  margin-top: 12vh;
 }
 
 .hero-text {
@@ -320,9 +319,9 @@ nav {
 #portfolio {
   position: relative;
   background-color: #aa8f66;
-  margin-top: 165px;
   padding-top: 60px;
   padding-bottom: 120px;
+  margin-top: -30vh;
 }
 
 #portfolio::before,
